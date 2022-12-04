@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Importing stylesheet-->
+    <link rel="stylesheet" href="assets/css/coordinate.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>City Name Weather App</title>
+</head>
+
+<body>
+  
+  
+    <div class="Card">
+      <ul>
+        <li><a href="index.html">current location</a></li>
+        <li><a href="cityname.html">city name</a></li>
+        <li><a class="active" href="coordinate.html">coordinate</a></li>
+        
+      </ul>
+       <div> <!--search bar and button-->
+          <input type="text" class="search-Input" placeholder="enter longitude">
+          <input type="text" class="search-Input2" placeholder="enter latitude">
+          <button onclick="takeUserInput()" class="searchBtn"><span class="material-symbols-outlined">
+            search
+            </span>           
+          </button>
+       </div>
+
+       <!--Display-->
+       <div class ="resultDisplay">
+        <h3 class = "cityName_description">City: </h3>
+        <h3 class = "country_description">Country: </h3>
+        <h3 class = "weather_condition">Weather condition: </h3>
+        <div class = "city_weather_description"><div class="context"> Description: </div><img id="icon" src="" alt=""></div>
+        <h3 class = "city_temperature">Temp: </h3>
+        <h5 class = "real_feel">Real feel: </h5>
+        <h5 class = "min_temperature">Min Temp: </h5>
+        <h5 class = "max_temperature">Min Temp: </h5>        
+        <h3 class = "humidity">Humidity: </h3>
+        <h3 class = "pressure">Pressure: </h3>
+        <h3 class = "wind">Wind speed: <h5 class = "wind_degree"></h5></h3>
+       </div>
+
+    </div>
+
+</body>
+
+<!--importing script from app.js-->
+<script src="assets/javascript/coordinate.js"></script>
+
+</html>
